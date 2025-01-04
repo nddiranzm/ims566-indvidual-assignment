@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific styling for the category section */
+        .category .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .category .box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .category .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .category .box img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .category .box h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 1rem 0;
+        }
+
+        .category .box .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background: #dcb723;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .category .box .btn:hover {
+            background: #3700b3;
+        }
+
+        /* Dropdown Styling - Added Below */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <img src="images/uitm logo nav.png" alt="Logo" style="height: 120px;">
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <div class="dropdown">
+                <a href="academic.html" class="dropbtn active">academic</a>
+                <div class="dropdown-content">
+                    <a href="#main">UiTM Program</a>
+                    <a href="#faculty">UiTM Faculty</a>
+                    <a href="#branch">UiTM Branch</a>
+                </div>
+            </div>
+            <a href="blog.html">blog</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+    </header>
+    <!-- header section ends -->
+
+    <div class="heading-title" style="background: url(images/uitm\ back.jpg) no-repeat;">
+        <h1>  programs</h1>
+    </div>
+
+    <!-- category section starts -->
+    <section class="category">
+        <h1 class="heading">category</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/UITM PRADIP.jpg" alt="programs">
+                <h3> PRA-DIPLOMA</h3>
+                <a href="https://uitm.edu.my/index.php/ms/pengambilan" class="btn"> Read More</a>
+            </div>
+            <div class="box">
+                <img src="images/PRASISWA.jpg" alt="faculty">
+                <h3>PRASISWAZAH</h3>
+                <a href="https://uitm.edu.my/index.php/ms/pengambilan" class="btn"> Read More</a>
+            </div>
+            <div class="box">
+                <img src="images/PART TIME UITM.jpg" alt="branch">
+                <h3>PEMBELAJARAN SEPARUH MASA</h3>
+                <a href="https://uitm.edu.my/index.php/ms/pengambilan" class="btn"> Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- category section ends -->
+    <!-- menu section starts -->
+
+    <section class="menu">
+
+        <h1 class="heading"> program</h1>
+
+        <div class="main" id="main"></div>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Foundation Law Program</h3>
+                    <p>The Foundation in Law program is a  preparatory course designed for students who intend to pursue a degree in law or related fields. .</p>
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Public Administration </h3>
+                    <p>The Public Administration is a program designed to equip students with the knowledge, for effective management and administration in public service and related fields. </p>
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Accounting</h3>
+                    <p>The course Accounting typically focuses on the principles, methods, and processes involved in recording, analyzing, and interpreting financial information.</p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Information Management </h3>
+                    <p>The course Information Management typically focuses on the study of managing, organizing, and utilizing information effectively within organizations.</p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Civil Engineering </h3>
+                    <p>The course Civil Engineering is a branch of engineering that focuses on the design, construction, and maintenance of infrastructure and the built environment.</p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Performance Dance  </h3>
+                    <p>Performance Dance Course It typically refers to a program or course focused on traditional or cultural dance performances, emphasizing the art, techniques, of the dances being taught.</p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Property Management </h3>
+                    <p>Property Management typically covers topics related to managing real estate properties, including property valuation, leasing, maintenance, tenant management, and market analysis.</p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/academic 8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pharmacy </h3>
+                    <p>The course Pharmacy It is a field of study that focuses on the preparation, dispensing, and proper use of medication. </p>                   
+                    <div class="thumb">
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <a href="https://online.uitm.edu.my/diploma.cfm" class="btn"> Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="heading">faculty</h1>
+        <div class="faculty" id="faculty"></div>
+
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/Faculty-of-Computer-Mathematical-Sciences.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Computing, Informatics & Mathematics Faculty</h3>
+                    <p>It typically focuses on the study, research, and application of computing technologies, information systems, and mathematical sciences.</p>
+                    
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/fakulti" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Health Sciences Faculty.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Health Sciences Faculty</h3>
+                    <p>It typically covers topics related to the study of human health, medical sciences, healthcare practices, and technologies aimed at improving health and well-being.</p>
+                    
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/fakulti" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Faculty-of-Education.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Education Faculty</h3>
+                    <p>It typically refers to a department or faculty at a university that focuses on educational studies, teacher training, and pedagogy.</p>
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/fakulti" class="btn"> Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="heading">branch</h1>
+        <div class="branch" id="branch"></div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/uitm selangor.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>UITM BRANCH SELANGOR </h3>
+                    <p></p>
+                    
+                
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/uitm-cawangan" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/uitmjb.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>UITM BRANCH JOHOR</h3>
+                    <p></p>
+                    
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/uitm-cawangan" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/uitm kelate.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>UITM BRANCH KELANTAN</h3>
+                    <p></p>
+                    
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/uitm-cawangan" class="btn"> Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/uitm melaka 2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>UITM BRANCH MELAKA</h3>
+                    <p></p>
+                    
+                    <a href="https://uitm.edu.my/index.php/ms/akademik-new/uitm-cawangan" class="btn"> Read More</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="academic.html"> <i class="fas fa-arrow-right"></i> academic</a>
+                <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Our Branch</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Johor</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Selangor</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Negeri Sembilan</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Kelantan</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Terengganu</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Sarawak</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/uitmrasmi/"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="https://www.youtube.com/channel/UCjIWjQSyTuVDD-GHPYcg7Pw"> <i class="fab fa-youtube"></i> youtube</a>
+                <a href="https://www.instagram.com/uitm.official/"> <i class="fab fa-instagram"></i> instagram</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for the latest updates</p>
+                <form action="https://istudent.uitm.edu.my/index_isp.htm" method="get">
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dropdown styling */
+        .navbar {
+            position: relative;
+        }
+
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #ff6347;
+        }
+
+        /* Fix unwanted zoom-out effect */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            transform: scale(1);
+            animation: none;
+            transition: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            animation: fadeIn ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header section starts -->
+
+    <header class="header">
+        <img src="images/uitm logo nav.png" alt="Logo" style="height: 120px;">
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <div class="dropdown">
+                <a href="about.html" class="dropbtn active">about</a>
+                <div class="dropdown-content">
+                    <a href="#about">About Us</a>
+                    <a href="#vision">Vision, Mission, Value</a>
+                    <a href="#chart">Chart Organisation</a>
+                    <a href="#logo">Means of Logo</a>
+                    <a href="#director">Profile of Director</a>
+                </div>
+            </div>
+            <a href="academic.html">academic</a>
+            <a href="blog.html">blog</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="heading-title" style="background: url(images/uitm\ back.jpg) no-repeat;">
+        <h1>about us</h1>
+    </div>
+
+    <!-- about us section starts -->
+
+    <section class="about">
+
+        <div class="image">
+            <img src="images/KotaKinabalu_Sabah_UiTM_BangunanPentadbiran.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>welcome to our pages</h3>
+
+            <p>Universiti Teknologi MARA (UiTM) is the largest comprehensive university in Malaysia, with 34 campuses, 14 faculties, 9 academic centers, and over 500 programs ranging from Foundation to PhD levels, including professional programs. UiTM offers innovative education with advanced infrastructure and technology, playing a vital role in nation-building and nurturing the potential of future generations.</p>
+
+            <p>UiTM is ranked 587th in the QS World University Rankings 2025, 101st in the QS Asia University Rankings 2025, and 107th in the UI GreenMetric World University Rankings 2024. It has also excelled in the QS World University Rankings by Subject 2024, with Hospitality & Leisure Management ranked among the top 50-100 globally. Additionally, UiTM holds the 136th position in the Times Higher Education Interdisciplinary Science Rankings 2025.</p>
+
+            <p>UiTM has earned prestigious accolades, including the 3G SDGs Championship Award 2022, the Reader’s Digest Trusted Brand Gold Award for 12 consecutive years, and The BrandLaureate BestBrands Awards 2022 – The Nation’s Pride Higher Education. With over 770,000 alumni across various fields, UiTM aspires to become a world-class university by 2025.</p>
+
+            <h3>Facts and Figures</h3>
+
+            <div class="image">
+                <img src="images/fact and figure.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about us section ends -->
+
+     <!-- Vision & Mission section starts -->
+
+     <section id="vision" class="gallery">
+
+        <h1 class="heading"> Vision, Mission, Value</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <h2>Vision</h2>
+                <p>To inspire and nurture creativity.</p>
+            </div>
+    
+            <div class="box">
+                <h2>Mission</h2>
+                <p>To empower communities through innovation.</p>
+            </div>
+    
+            <div class="box">
+                <h2>Values</h2>
+                <p>Integrity, Excellence, Collaboration.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Vision & Mission section ends -->
+
+   <!-- Chart Organisation section starts -->
+
+    <section id="chart" class="chart-organisation">
+    <h1 class="heading"> Chart Organisation</h1>
+    <div class="chart-container">
+        <img src="images/chart.jpg" alt="Chart Organisation">
+    </div>
+   </section>
+
+    <!-- Chart Organisation section ends -->
+
+    <!-- Logo section starts -->
+
+<section id="logo" class="logo-section">
+    <h1 class="heading"> Means of Logo</h1>
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Means of Logo" class="logo-image">
+    </div>
+</section>
+
+<!-- Logo section ends -->
+<!-- Director section starts -->
+<!-- Director Section Starts -->
+<section id="director" class="director-section">
+    <h1 class="heading">Profile of Director</h1>
+    <div class="director-container">
+        <div class="profile-list">
+            <button onclick="showProfile('counselor')">COUNSELOR</button>
+            <button onclick="showProfile('pro-counselor')">PRO-COUNSELOR</button>
+            <button onclick="showProfile('vice-counselor')">VICE-COUNSELOR</button>
+            <button onclick="showProfile('board-director')">BOARD-DIRECTOR</button>
+            <button onclick="showProfile('executive-management')">EXECUTIVE-MANAGEMENT</button>
+        </div>
+
+        <!-- Profile Details -->
+        <div id="counselor" class="profile-details">
+            <img src="images/uitm sultan.jpeg" alt="Counselor">
+            <h1>His Majesty Sultan Ibrahim King of Malaysia</h1>
+            <h3>Position: University Counselor</h3>
+            <h3>His Majesty the Yang di-Pertuan Agong is the Head of the University. DYMM Tuanku Chancellor determines the frequency and date for convocation and he is the one who chairs it. DYMM Tuanku Chancellor awards degrees, diplomas, certificates and other academic achievements to anyone who has undergone studies approved by the University. DYMM Tuanku Chancellor also awarded an honorary degree or any other award as suggested by the Board of Directors after discussion with the Senate. DYMM Tuanku Chancellor also performs other duties as stipulated in the MARA University of Technology Act 1976 (Act 173).</h3>
+        </div>
+        <div id="pro-counselor" class="profile-details">
+            <img src="images/permaisuri naib.png" alt="Pro-Counselor">
+            <h1>Her Royal Highness Tengku Permaisuri Hajah Norashikin</h21>
+            <h3>Position: Pro-Counselor</h3>
+            <h3>Her Royal Highness Tengku Permaisuri Hajah Norashikin is the Pro-chancellor of Universiti Teknologi MARA (UiTM), and was declared on June 14, 2022, starting from October 18, 2021 to October 17, 2024.</h3>
+        </div>
+        <div id="vice-counselor" class="profile-details">
+            <img src="images/naib.png" alt="Vice-Counselor">
+            <h1>YBhg. Profesor Datuk Ts. Dr. Shahrin bin Sahib @ Sahibuddin, FASc</h1>
+            <h3>Position: Vice-Counselor</h3>
+            <h3>Cyber ​​Security, Networking, Computer Systems, Parallel Processing.</h3>
+        </div>
+        <div id="board-director" class="profile-details">
+            <img src="images/pengarah.png" alt="Board Director">
+            <h1>Tan Sri Dato’ Sri Haji Mohd Khamil bin Jamil</h1>
+            <h3>Position: Board Director</h3>
+            <h3>Tan Sri Dato’ Sri Haji Mohd Khamil bin Jamil began his Board Director career.</h3>
+        </div>
+        <div id="executive-management" class="profile-details">
+            <img src="images/naib.png" alt="Executive Management">
+            <h2>YBhg. Profesor Datuk Ts. Dr. Shahrin bin Sahib @ Sahibuddin, FASc</h2>
+            <h3>Position: Executive Manager</h3>
+            <h3>Responsible for operational excellence, Cyber ​​Security, Networking, Computer Systems, Parallel Processing..</h3>
+        </div>
+    </div>
+</section>
+<!-- Director Section Ends -->
+
+<script>
+    function showProfile(id) {
+        // Hide all profiles
+        const profiles = document.querySelectorAll('.profile-details');
+        profiles.forEach(profile => profile.style.display = 'none');
+
+        // Show the selected profile
+        document.getElementById(id).style.display = 'block';
+    }
+</script>
+
+<style>
+    .director-section {
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    
+    .profile-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .profile-list button {
+        padding: 15px 30px;
+        border: none;
+        background-color: #072240;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .profile-list button:hover {
+        background-color: #072240;
+    }
+    .profile-details {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile-details img {
+        width: 200px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .profile-details h2 {
+        margin: 10px 0;
+    }
+    .profile-details p {
+        margin: 0;
+        color: #555;
+    }
+</style>
+
+<!-- Director section ends -->
+
+
+
+
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="academic.html"> <i class="fas fa-arrow-right"></i> academic</a>
+                <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Our Branch</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Johor</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Selangor</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Negeri Sembilan</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Kelantan</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Terengganu</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Sarawak</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/uitmrasmi/"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="https://www.youtube.com/channel/UCjIWjQSyTuVDD-GHPYcg7Pw"> <i class="fab fa-youtube"></i> youtube</a>
+                <a href="https://www.instagram.com/uitm.official/"> <i class="fab fa-instagram"></i> instagram</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for the latest updates</p>
+                <form action="https://istudent.uitm.edu.my/index_isp.htm" method="get">
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
